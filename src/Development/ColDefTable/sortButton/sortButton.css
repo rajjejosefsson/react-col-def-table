@@ -1,0 +1,12 @@
+.c-sort-button {
+  background: none;
+  border: none;
+  font-size: var(--font-size--small);
+  color: var(--color-juri-lighter);
+  cursor: pointer;
+  outline: none;
+}
+
+.c-sort-button--active {
+  color: var(--color-juri);
+}

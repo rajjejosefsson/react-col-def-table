@@ -1,0 +1,266 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.c-footer {
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(41, 51, 57, 0.5);
+}
+
+.c-footer--rows-per-page,
+.c-footer--count,
+.c-footer--pagination {
+  padding: 0 20px;
+}
+
+.c-footer--rows-per-page {
+  font-size: var(--font-size--tiny);
+}
+
+.c-footer--count {
+  font-size: var(--font-size--tiny);
+}
+
+.c-footer--pagination {
+}
+
+.c-footer--pagination-button {
+  border: none;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+:root {
+  --color-juri-lighter: #9ba2a6;
+  --color-juri: #37454d;
+
+  --font-size--tiny: 12px;
+  --font-size--h-tiny: 14px;
+  --font-size--small: 20px;
+
+  --box-shadow: 0 1px 4px 0 rgba(41, 51, 57, 0.5);
+}
+
+.c-table--th,
+.c-table--box-shadow-th,
+.c-table--td {
+  padding-left: 10px;
+}
+
+.c-table--th,
+.c-table--box-shadow-th {
+  font-size: var(--font-size--h-tiny);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-table--th {
+  border-top: 1px solid var(--color-juri-lighter);
+  border-right: 1px solid var(--color-juri-lighter);
+}
+
+.c-table--box-shadow-th {
+  border-right: 1px solid var(--color-juri-lighter);
+  border-top: none;
+}
+
+.c-table--box-shadow-th:last-child {
+  border-right: none;
+}
+
+.c-table--th-sort {
+  color: var(--color-juri-lighter);
+}
+
+.c-table--th-sort-active {
+  color: var(--color-juri);
+}
+
+.c-table--sub-header,
+.c-table--sub-header-title {
+  background: #cccccc;
+}
+
+.c-table--sub-header-title {
+  font-weight: bold;
+}
+
+.c-table--td {
+  color: var(--color-juri);
+  font-size: var(--font-size--tiny);
+  border-top: 1px solid var(--color-juri-lighter);
+  display: flex;
+  align-items: center;
+}
+
+.c-table--td.c-table--td-hover-cell {
+  background: #f5f5f5;
+}
+
+.c-table--top-left-grid {
+  box-shadow: 6px 0 5px -2px #5454548c;
+  z-index: 2;
+}
+
+.c-table--top-left-grid .c-table--box-shadow-th {
+  border-right: none;
+}
+
+.c-table--bottom-left-grid {
+  box-shadow: 6px 0 5px -2px #5454548c;
+  z-index: 2;
+}
+
+.c-table--top-right-grid {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* .c-table--row-even {
+} */
+
+.c-table--row-odd {
+  background: rgb(251, 251, 251);
+}
+
+.c-table--row-odd .c-table--input-zebra {
+  background: rgb(251, 251, 251);
+}
+
+.c-checkbox-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.c-table--th-label-clickable {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+.c-sort-button {
+  background: none;
+  border: none;
+  font-size: var(--font-size--small);
+  color: var(--color-juri-lighter);
+  cursor: pointer;
+  outline: none;
+}
+
+.c-sort-button--active {
+  color: var(--color-juri);
+}
+
+/* Collection default theme */
+
+.ReactVirtualized__Collection {
+}
+
+.ReactVirtualized__Collection__innerScrollContainer {
+}
+
+/* Grid default theme */
+
+.ReactVirtualized__Grid {
+}
+
+.ReactVirtualized__Grid__innerScrollContainer {
+}
+
+/* Table default theme */
+
+.ReactVirtualized__Table {
+}
+
+.ReactVirtualized__Table__Grid {
+}
+
+.ReactVirtualized__Table__headerRow {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ReactVirtualized__Table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ReactVirtualized__Table__headerTruncatedText {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ReactVirtualized__Table__headerColumn,
+.ReactVirtualized__Table__rowColumn {
+  margin-right: 10px;
+  min-width: 0px;
+}
+.ReactVirtualized__Table__rowColumn {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ReactVirtualized__Table__headerColumn:first-of-type,
+.ReactVirtualized__Table__rowColumn:first-of-type {
+  margin-left: 10px;
+}
+.ReactVirtualized__Table__sortableHeaderColumn {
+  cursor: pointer;
+}
+
+.ReactVirtualized__Table__sortableHeaderIconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ReactVirtualized__Table__sortableHeaderIcon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+}
+
+/* List default theme */
+
+.ReactVirtualized__List {
+}

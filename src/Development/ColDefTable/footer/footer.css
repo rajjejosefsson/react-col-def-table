@@ -1,0 +1,30 @@
+.c-footer {
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(41, 51, 57, 0.5);
+}
+
+.c-footer--rows-per-page,
+.c-footer--count,
+.c-footer--pagination {
+  padding: 0 20px;
+}
+
+.c-footer--rows-per-page {
+  font-size: var(--font-size--tiny);
+}
+
+.c-footer--count {
+  font-size: var(--font-size--tiny);
+}
+
+.c-footer--pagination {
+}
+
+.c-footer--pagination-button {
+  border: none;
+  font-size: 18px;
+  margin: 0 5px;
+}

@@ -1,0 +1,41 @@
+:root {
+  --color-blue-very-light: #bfdfea;
+  --color-blue: #007fad;
+}
+
+h1 {
+  font-size: 34px;
+  margin: 0;
+}
+
+.c-documentation--section {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.c-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.c-docs-button {
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  display: block;
+  background: rgb(61, 149, 61);
+  color: white;
+}
+
+.c-lib-text {
+  text-align: center;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.816);
+}
