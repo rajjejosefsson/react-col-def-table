@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
- Demo @ <a href="https://codesandbox.io/s/7jmv0p63w6" target="_blank">Codesandbox</a>
+ Demo @ <a href="https://codesandbox.io/s/github/rajjejosefsson/react-col-def-table" target="_blank">Codesandbox</a>
 </p>
 
 <hr />
